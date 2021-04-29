@@ -1,0 +1,19 @@
+Algoritmo ejercicio3
+	Escribir 'Ingrese el numero a insertar'
+	Leer num
+	contador<-1
+	May<-0	
+	Mientras num>0 Hacer		
+		aux<-Trunc(n)%10
+		Si aux > May Entonces
+			May <- aux
+			contador<-1
+		SiNo
+			Si aux=May Entonces
+				contador<-contador+1			
+			Fin Si
+		Fin Si		
+		num <- num / 10	
+	Fin Mientras
+	Escribir "el numero mayor es: " May, " y se repite:  " contador
+FinAlgoritmo
